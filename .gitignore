@@ -1,0 +1,5 @@
+build
+Pods
+Podfile.lock
+*.xcworkspace
+xcuserdata

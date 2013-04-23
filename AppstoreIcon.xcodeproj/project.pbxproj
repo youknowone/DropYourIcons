@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38D930B01726C5AB00BD0938 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930AF1726C5AB00BD0938 /* Cocoa.framework */; };
+		38D930BA1726C5AB00BD0938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D930B81726C5AB00BD0938 /* InfoPlist.strings */; };
+		38D930BC1726C5AB00BD0938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930BB1726C5AB00BD0938 /* main.m */; };
+		38D930C01726C5AB00BD0938 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 38D930BE1726C5AB00BD0938 /* Credits.rtf */; };
+		38D930C31726C5AB00BD0938 /* AIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930C21726C5AB00BD0938 /* AIAppDelegate.m */; };
+		38D930C61726C5AC00BD0938 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D930C41726C5AC00BD0938 /* MainMenu.xib */; };
+		38D930CE1726C5AC00BD0938 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */; };
+		38D930CF1726C5AC00BD0938 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930AF1726C5AB00BD0938 /* Cocoa.framework */; };
+		38D930D71726C5AC00BD0938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D930D51726C5AC00BD0938 /* InfoPlist.strings */; };
+		38D930DA1726C5AC00BD0938 /* AppstoreIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */; };
+		38D930E51726C74300BD0938 /* AIIconWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930E41726C74300BD0938 /* AIIconWindowController.m */; };
+		E9026859F2E44D93AACBEB36 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF69A8FC97D49D88FD0F767 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38D930D01726C5AC00BD0938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38D930A41726C5AB00BD0938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38D930AB1726C5AB00BD0938;
+			remoteInfo = AppstoreIcon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppstoreIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930AF1726C5AB00BD0938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		38D930B21726C5AB00BD0938 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		38D930B31726C5AB00BD0938 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		38D930B41726C5AB00BD0938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38D930B71726C5AB00BD0938 /* AppstoreIcon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIcon-Info.plist"; sourceTree = "<group>"; };
+		38D930B91726C5AB00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38D930BB1726C5AB00BD0938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38D930BD1726C5AB00BD0938 /* AppstoreIcon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppstoreIcon-Prefix.pch"; sourceTree = "<group>"; };
+		38D930BF1726C5AB00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		38D930C11726C5AB00BD0938 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
+		38D930C21726C5AB00BD0938 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
+		38D930C51726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		38D930CC1726C5AC00BD0938 /* AppstoreIconTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppstoreIconTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		38D930D41726C5AC00BD0938 /* AppstoreIconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIconTests-Info.plist"; sourceTree = "<group>"; };
+		38D930D61726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38D930D81726C5AC00BD0938 /* AppstoreIconTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppstoreIconTests.h; sourceTree = "<group>"; };
+		38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppstoreIconTests.m; sourceTree = "<group>"; };
+		38D930E31726C74300BD0938 /* AIIconWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIconWindowController.h; sourceTree = "<group>"; };
+		38D930E41726C74300BD0938 /* AIIconWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIIconWindowController.m; sourceTree = "<group>"; };
+		8F5EE625EDEB485683E3965F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CEF69A8FC97D49D88FD0F767 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38D930A91726C5AB00BD0938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D930B01726C5AB00BD0938 /* Cocoa.framework in Frameworks */,
+				E9026859F2E44D93AACBEB36 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D930C81726C5AC00BD0938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D930CE1726C5AC00BD0938 /* SenTestingKit.framework in Frameworks */,
+				38D930CF1726C5AC00BD0938 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38D930A31726C5AB00BD0938 = {
+			isa = PBXGroup;
+			children = (
+				38D930B51726C5AB00BD0938 /* AppstoreIcon */,
+				38D930D21726C5AC00BD0938 /* AppstoreIconTests */,
+				38D930AE1726C5AB00BD0938 /* Frameworks */,
+				38D930AD1726C5AB00BD0938 /* Products */,
+				8F5EE625EDEB485683E3965F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		38D930AD1726C5AB00BD0938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */,
+				38D930CC1726C5AC00BD0938 /* AppstoreIconTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38D930AE1726C5AB00BD0938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D930AF1726C5AB00BD0938 /* Cocoa.framework */,
+				38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */,
+				38D930B11726C5AB00BD0938 /* Other Frameworks */,
+				CEF69A8FC97D49D88FD0F767 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38D930B11726C5AB00BD0938 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D930B21726C5AB00BD0938 /* AppKit.framework */,
+				38D930B31726C5AB00BD0938 /* CoreData.framework */,
+				38D930B41726C5AB00BD0938 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		38D930B51726C5AB00BD0938 /* AppstoreIcon */ = {
+			isa = PBXGroup;
+			children = (
+				38D930C11726C5AB00BD0938 /* AIAppDelegate.h */,
+				38D930C21726C5AB00BD0938 /* AIAppDelegate.m */,
+				38D930C41726C5AC00BD0938 /* MainMenu.xib */,
+				38D930E31726C74300BD0938 /* AIIconWindowController.h */,
+				38D930E41726C74300BD0938 /* AIIconWindowController.m */,
+				38D930B61726C5AB00BD0938 /* Supporting Files */,
+			);
+			path = AppstoreIcon;
+			sourceTree = "<group>";
+		};
+		38D930B61726C5AB00BD0938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D930B71726C5AB00BD0938 /* AppstoreIcon-Info.plist */,
+				38D930B81726C5AB00BD0938 /* InfoPlist.strings */,
+				38D930BB1726C5AB00BD0938 /* main.m */,
+				38D930BD1726C5AB00BD0938 /* AppstoreIcon-Prefix.pch */,
+				38D930BE1726C5AB00BD0938 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38D930D21726C5AC00BD0938 /* AppstoreIconTests */ = {
+			isa = PBXGroup;
+			children = (
+				38D930D81726C5AC00BD0938 /* AppstoreIconTests.h */,
+				38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */,
+				38D930D31726C5AC00BD0938 /* Supporting Files */,
+			);
+			path = AppstoreIconTests;
+			sourceTree = "<group>";
+		};
+		38D930D31726C5AC00BD0938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D930D41726C5AC00BD0938 /* AppstoreIconTests-Info.plist */,
+				38D930D51726C5AC00BD0938 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38D930AB1726C5AB00BD0938 /* AppstoreIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcon" */;
+			buildPhases = (
+				38D930A81726C5AB00BD0938 /* Sources */,
+				38D930A91726C5AB00BD0938 /* Frameworks */,
+				38D930AA1726C5AB00BD0938 /* Resources */,
+				C7C8CC64D776487A84FD430D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppstoreIcon;
+			productName = AppstoreIcon;
+			productReference = 38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38D930CB1726C5AC00BD0938 /* AppstoreIconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconTests" */;
+			buildPhases = (
+				38D930C71726C5AC00BD0938 /* Sources */,
+				38D930C81726C5AC00BD0938 /* Frameworks */,
+				38D930C91726C5AC00BD0938 /* Resources */,
+				38D930CA1726C5AC00BD0938 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38D930D11726C5AC00BD0938 /* PBXTargetDependency */,
+			);
+			name = AppstoreIconTests;
+			productName = AppstoreIconTests;
+			productReference = 38D930CC1726C5AC00BD0938 /* AppstoreIconTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38D930A41726C5AB00BD0938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AI;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jeong YunWon";
+			};
+			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38D930A31726C5AB00BD0938;
+			productRefGroup = 38D930AD1726C5AB00BD0938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38D930AB1726C5AB00BD0938 /* AppstoreIcon */,
+				38D930CB1726C5AC00BD0938 /* AppstoreIconTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38D930AA1726C5AB00BD0938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D930BA1726C5AB00BD0938 /* InfoPlist.strings in Resources */,
+				38D930C01726C5AB00BD0938 /* Credits.rtf in Resources */,
+				38D930C61726C5AC00BD0938 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D930C91726C5AC00BD0938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D930D71726C5AC00BD0938 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D930CA1726C5AC00BD0938 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C7C8CC64D776487A84FD430D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38D930A81726C5AB00BD0938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D930BC1726C5AB00BD0938 /* main.m in Sources */,
+				38D930C31726C5AB00BD0938 /* AIAppDelegate.m in Sources */,
+				38D930E51726C74300BD0938 /* AIIconWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D930C71726C5AC00BD0938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D930DA1726C5AC00BD0938 /* AppstoreIconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38D930D11726C5AC00BD0938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38D930AB1726C5AB00BD0938 /* AppstoreIcon */;
+			targetProxy = 38D930D01726C5AC00BD0938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38D930B81726C5AB00BD0938 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D930B91726C5AB00BD0938 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38D930BE1726C5AB00BD0938 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D930BF1726C5AB00BD0938 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		38D930C41726C5AC00BD0938 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D930C51726C5AC00BD0938 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		38D930D51726C5AC00BD0938 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D930D61726C5AC00BD0938 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38D930DB1726C5AC00BD0938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		38D930DC1726C5AC00BD0938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		38D930DE1726C5AC00BD0938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
+				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcon-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PRODUCT_NAME = AppstoreIcon;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38D930DF1726C5AC00BD0938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
+				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcon-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PRODUCT_NAME = AppstoreIcon;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		38D930E11726C5AC00BD0938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppstoreIcon.app/Contents/MacOS/AppstoreIcon";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
+				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconTests-Info.plist";
+				PRODUCT_NAME = AppstoreIconTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		38D930E21726C5AC00BD0938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppstoreIcon.app/Contents/MacOS/AppstoreIcon";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
+				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconTests-Info.plist";
+				PRODUCT_NAME = AppstoreIconTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D930DB1726C5AC00BD0938 /* Debug */,
+				38D930DC1726C5AC00BD0938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D930DE1726C5AC00BD0938 /* Debug */,
+				38D930DF1726C5AC00BD0938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D930E11726C5AC00BD0938 /* Debug */,
+				38D930E21726C5AC00BD0938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38D930A41726C5AB00BD0938 /* Project object */;
+}
