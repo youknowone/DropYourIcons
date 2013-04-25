@@ -6,8 +6,14 @@
 //  Copyright (c) 2013 Jeong YunWon. All rights reserved.
 //
 
-@interface AIIconWindowController : NSWindowController<NSAImageWellDelegate>
+@interface AIIconWindowController : NSWindowController<NSOpenSavePanelDelegate, NSAImageWellDelegate>
 
 @property IBOutlet NSView *hintView;
+@property IBOutlet NSAImageWell *inputImageWell;
+@property IBOutlet NSButton *generateToDownloads, *generateToSelected;
+
+- (IBAction)selectInput:(id)sender;
+- (IBAction)generateToDownloadsFolder:(id)sender;
+- (IBAction)generateToSelectedFolder:(id)sender;
 
 @end

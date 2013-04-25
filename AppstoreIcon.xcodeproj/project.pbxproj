@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		382E39A917279B6000099BC4 /* AppstoreIcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppstoreIcon.entitlements; sourceTree = "<group>"; };
 		38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppstoreIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930AF1726C5AB00BD0938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D930B21726C5AB00BD0938 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -123,6 +124,7 @@
 		38D930B51726C5AB00BD0938 /* AppstoreIcon */ = {
 			isa = PBXGroup;
 			children = (
+				382E39A917279B6000099BC4 /* AppstoreIcon.entitlements */,
 				38D930C11726C5AB00BD0938 /* AIAppDelegate.h */,
 				38D930C21726C5AB00BD0938 /* AIAppDelegate.m */,
 				38D930C41726C5AC00BD0938 /* MainMenu.xib */,
@@ -411,6 +413,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AppstoreIcon/AppstoreIcon.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
@@ -425,6 +429,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AppstoreIcon/AppstoreIcon.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
