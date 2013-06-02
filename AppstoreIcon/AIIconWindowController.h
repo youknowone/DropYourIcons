@@ -10,6 +10,7 @@
 
 @property IBOutlet NSView *hintView;
 @property IBOutlet NSAImageWell *inputImageWell;
+@property IBOutlet NSSegmentedControl *sizeSegmentControl;
 @property IBOutlet NSButton *generateToDownloads, *generateToSelected;
 
 - (IBAction)selectInput:(id)sender;

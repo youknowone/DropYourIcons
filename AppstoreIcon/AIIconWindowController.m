@@ -34,7 +34,6 @@
 - (void)enableButtons {
     [self.generateToDownloads setEnabled:YES];
     [self.generateToSelected setEnabled:YES];
-    NSLog(@"%d %d", [self.generateToDownloads isEnabled], [self.generateToSelected isEnabled]);
 }
 
 - (void)selectInput:(id)sender {
@@ -48,14 +47,21 @@
     [self enableButtons];
 }
 
-- (void)generateToDownloadsFolder:(id)sender {
-    NSURL *dirURL = NSPathForUserFileInDirectory(NSDownloadsDirectory, @"icon.iconset").fileURL;
+- (void)generateIconToURL:(NSURL *)dirURL {
+    static NSArray *sizes = nil;
+    if (sizes == nil) {
+        sizes = @[
+            @[@512, @256, @128, @32, @16],
+            @[@72, @57],
+        ];
+    }
+
     BOOL result = [[NSFileManager defaultManager] createDirectoryAtURL:dirURL withIntermediateDirectories:YES attributes:@{} error:NULL];
     if (!result) {
 
     }
 
-    for (NSNumber *sizeNumber in @[@512, @256, @128, @32, @16]) {
+    for (NSNumber *sizeNumber in [sizes objectAtIndex:self.sizeSegmentControl.selectedSegment]) {
         NSUInteger size = sizeNumber.integerValue;
         NSString *suffix = @"";
         {
@@ -64,6 +70,7 @@
             [outData writeToURL:outURL atomically:YES];
             system([@"sips -z %lu %lu -s format png '%@'" format0:0, size, size, outURL.path].UTF8String);
         }
+
         size *= 2;
         suffix = @"@2x";
         {
@@ -75,20 +82,46 @@
     }
 }
 
+- (void)generateToDownloadsFolder:(id)sender {
+    NSString *filename = [[[self.inputImageWell.imageURL path] lastPathComponent] stringByDeletingPathExtension];
+    NSString *iconname = (filename.length > 0) ? filename : @"icon";
+    NSURL *dirURL = NSPathForUserFileInDirectory(NSDownloadsDirectory, [iconname stringByAppendingString:@".iconset"]).fileURL;
+    [self generateIconToURL:dirURL];
+}
+
 - (void)generateToSelectedFolder:(id)sender {
     NSSavePanel *savePanel = [NSSavePanel savePanel];
+    savePanel.directoryURL = [self.inputImageWell.imageURL URLByDeletingLastPathComponent];
+    savePanel.allowedFileTypes = @[@"iconset"];
+
+    NSInteger status = [savePanel runModal];
+    if (status == NSFileHandlingPanelCancelButton) {
+        return;
+    }
+
+    [self generateIconToURL:savePanel.URL];
 }
 
 #pragma mark NSOpenSavePanel delegate
 
 - (BOOL)panel:(id)sender shouldEnableURL:(NSURL *)url {
-    return [[NSImage imageFileTypes] containsObject:[url pathExtension]];
+    if ([sender isKindOfClass:[NSSavePanel class]]) {
+        return [url.path.pathExtension isEqualToString:@"iconset"] && url.hasDirectoryPath;
+    } else {
+        return [[NSImage imageFileTypes] containsObject:[url pathExtension]];
+    }
 }
 
 - (BOOL)panel:(id)sender validateURL:(NSURL *)url error:(NSError *__autoreleasing *)outError {
-    NSImage *image = [NSImage imageByReferencingURL:url];
-    return !NSSizeEqualToSize(image.size, NSSizeZero);
+    if ([sender isKindOfClass:[NSSavePanel class]]) {
+        return YES;
+    } else {
+        NSImage *image = [NSImage imageByReferencingURL:url];
+        return !NSSizeEqualToSize(image.size, NSSizeZero);
+    }
 }
+
+
 
 #pragma mark NSAImageWell delegate
 
