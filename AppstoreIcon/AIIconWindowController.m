@@ -6,7 +6,11 @@
 //  Copyright (c) 2013 Jeong YunWon. All rights reserved.
 //
 
+#import <cdebug/debug.h>
+
 #import "AIIconWindowController.h"
+
+NSString *AILastSegmentIndex = @"AILastSegmentIndex";
 
 @interface AIIconWindowController ()
 
@@ -29,6 +33,12 @@
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+}
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    NSInteger selectedSegment = [[[NSUserDefaults standardUserDefaults] objectForKey:AILastSegmentIndex] integerValue];
+    self.sizeSegmentControl.selectedSegment = selectedSegment;
 }
 
 - (void)enableButtons {
@@ -56,18 +66,27 @@
         ];
     }
 
-    BOOL result = [[NSFileManager defaultManager] createDirectoryAtURL:dirURL withIntermediateDirectories:YES attributes:@{} error:NULL];
+    NSError *error = nil;
+    BOOL result = [[NSFileManager defaultManager] createDirectoryAtURL:dirURL withIntermediateDirectories:YES attributes:@{} error:&error];
+    if (error != nil) {
+        NSLog(@"error! %@", error);
+    }
     if (!result) {
 
     }
 
-    for (NSNumber *sizeNumber in [sizes objectAtIndex:self.sizeSegmentControl.selectedSegment]) {
+    NSInteger selectedSegment = self.sizeSegmentControl.selectedSegment;
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:selectedSegment] forKey:AILastSegmentIndex];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
+    for (NSNumber *sizeNumber in [sizes objectAtIndex:selectedSegment]) {
         NSUInteger size = sizeNumber.integerValue;
         NSString *suffix = @"";
         {
             NSURL *outURL = [@"%@/icon_%@x%@%@.png" format:dirURL.path, sizeNumber, sizeNumber, suffix].fileURL;
             NSData *outData = self.inputImageWell.image.PNGRepresentation;
-            [outData writeToURL:outURL atomically:YES];
+            BOOL result = [outData writeToURL:outURL atomically:YES];
+            dlog(YES, @"filewriting? %d", result);
             system([@"sips -z %lu %lu -s format png '%@'" format0:0, size, size, outURL.path].UTF8String);
         }
 

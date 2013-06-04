@@ -414,13 +414,14 @@
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AppstoreIcon/AppstoreIcon.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
 				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcon-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PRODUCT_NAME = AppstoreIcon;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -430,13 +431,14 @@
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = AppstoreIcon/AppstoreIcon.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
 				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcon-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PRODUCT_NAME = AppstoreIcon;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
