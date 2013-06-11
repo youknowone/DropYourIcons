@@ -62,7 +62,7 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     if (sizes == nil) {
         sizes = @[
             @[@512, @256, @128, @32, @16],
-            @[@72, @57],
+            @[@72, @60, @57],
         ];
     }
 
