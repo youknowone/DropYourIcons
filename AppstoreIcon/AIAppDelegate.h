@@ -12,4 +12,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (IBAction)showSource:(id)sender;
+- (IBAction)reportBug:(id)sender;
+
 @end

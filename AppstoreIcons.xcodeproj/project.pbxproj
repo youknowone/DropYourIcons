@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38017466176AB02A0049D26C /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 38017465176AB02A0049D26C /* Icon.iconset */; };
 		38D930B01726C5AB00BD0938 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930AF1726C5AB00BD0938 /* Cocoa.framework */; };
 		38D930BA1726C5AB00BD0938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D930B81726C5AB00BD0938 /* InfoPlist.strings */; };
 		38D930BC1726C5AB00BD0938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930BB1726C5AB00BD0938 /* main.m */; };
@@ -32,23 +33,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38017465176AB02A0049D26C /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		382E39A917279B6000099BC4 /* AppstoreIcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppstoreIcon.entitlements; sourceTree = "<group>"; };
-		38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppstoreIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930AC1726C5AB00BD0938 /* AppstoreIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppstoreIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930AF1726C5AB00BD0938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D930B21726C5AB00BD0938 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38D930B31726C5AB00BD0938 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		38D930B41726C5AB00BD0938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		38D930B71726C5AB00BD0938 /* AppstoreIcon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIcon-Info.plist"; sourceTree = "<group>"; };
+		38D930B71726C5AB00BD0938 /* AppstoreIcons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIcons-Info.plist"; sourceTree = "<group>"; };
 		38D930B91726C5AB00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38D930BB1726C5AB00BD0938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		38D930BD1726C5AB00BD0938 /* AppstoreIcon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppstoreIcon-Prefix.pch"; sourceTree = "<group>"; };
+		38D930BD1726C5AB00BD0938 /* AppstoreIcons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppstoreIcons-Prefix.pch"; sourceTree = "<group>"; };
 		38D930BF1726C5AB00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		38D930C11726C5AB00BD0938 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
 		38D930C21726C5AB00BD0938 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
 		38D930C51726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		38D930CC1726C5AC00BD0938 /* AppstoreIconTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppstoreIconTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930CC1726C5AC00BD0938 /* AppstoreIconsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppstoreIconsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		38D930D41726C5AC00BD0938 /* AppstoreIconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIconTests-Info.plist"; sourceTree = "<group>"; };
+		38D930D41726C5AC00BD0938 /* AppstoreIconsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIconsTests-Info.plist"; sourceTree = "<group>"; };
 		38D930D61726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38D930D81726C5AC00BD0938 /* AppstoreIconTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppstoreIconTests.h; sourceTree = "<group>"; };
 		38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppstoreIconTests.m; sourceTree = "<group>"; };
@@ -94,8 +96,8 @@
 		38D930AD1726C5AB00BD0938 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */,
-				38D930CC1726C5AC00BD0938 /* AppstoreIconTests.octest */,
+				38D930AC1726C5AB00BD0938 /* AppstoreIcons.app */,
+				38D930CC1726C5AC00BD0938 /* AppstoreIconsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,10 +140,11 @@
 		38D930B61726C5AB00BD0938 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38D930B71726C5AB00BD0938 /* AppstoreIcon-Info.plist */,
+				38017465176AB02A0049D26C /* Icon.iconset */,
+				38D930B71726C5AB00BD0938 /* AppstoreIcons-Info.plist */,
 				38D930B81726C5AB00BD0938 /* InfoPlist.strings */,
 				38D930BB1726C5AB00BD0938 /* main.m */,
-				38D930BD1726C5AB00BD0938 /* AppstoreIcon-Prefix.pch */,
+				38D930BD1726C5AB00BD0938 /* AppstoreIcons-Prefix.pch */,
 				38D930BE1726C5AB00BD0938 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -160,7 +163,7 @@
 		38D930D31726C5AC00BD0938 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38D930D41726C5AC00BD0938 /* AppstoreIconTests-Info.plist */,
+				38D930D41726C5AC00BD0938 /* AppstoreIconsTests-Info.plist */,
 				38D930D51726C5AC00BD0938 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -169,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38D930AB1726C5AB00BD0938 /* AppstoreIcon */ = {
+		38D930AB1726C5AB00BD0938 /* AppstoreIcons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcon" */;
+			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcons" */;
 			buildPhases = (
 				38D930A81726C5AB00BD0938 /* Sources */,
 				38D930A91726C5AB00BD0938 /* Frameworks */,
@@ -182,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = AppstoreIcon;
+			name = AppstoreIcons;
 			productName = AppstoreIcon;
-			productReference = 38D930AC1726C5AB00BD0938 /* AppstoreIcon.app */;
+			productReference = 38D930AC1726C5AB00BD0938 /* AppstoreIcons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38D930CB1726C5AC00BD0938 /* AppstoreIconTests */ = {
+		38D930CB1726C5AC00BD0938 /* AppstoreIconsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconTests" */;
+			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconsTests" */;
 			buildPhases = (
 				38D930C71726C5AC00BD0938 /* Sources */,
 				38D930C81726C5AC00BD0938 /* Frameworks */,
@@ -201,9 +204,9 @@
 			dependencies = (
 				38D930D11726C5AC00BD0938 /* PBXTargetDependency */,
 			);
-			name = AppstoreIconTests;
+			name = AppstoreIconsTests;
 			productName = AppstoreIconTests;
-			productReference = 38D930CC1726C5AC00BD0938 /* AppstoreIconTests.octest */;
+			productReference = 38D930CC1726C5AC00BD0938 /* AppstoreIconsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +219,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jeong YunWon";
 			};
-			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcon" */;
+			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -228,8 +231,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38D930AB1726C5AB00BD0938 /* AppstoreIcon */,
-				38D930CB1726C5AC00BD0938 /* AppstoreIconTests */,
+				38D930AB1726C5AB00BD0938 /* AppstoreIcons */,
+				38D930CB1726C5AC00BD0938 /* AppstoreIconsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +245,7 @@
 				38D930BA1726C5AB00BD0938 /* InfoPlist.strings in Resources */,
 				38D930C01726C5AB00BD0938 /* Credits.rtf in Resources */,
 				38D930C61726C5AC00BD0938 /* MainMenu.xib in Resources */,
+				38017466176AB02A0049D26C /* Icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +313,7 @@
 /* Begin PBXTargetDependency section */
 		38D930D11726C5AC00BD0938 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38D930AB1726C5AB00BD0938 /* AppstoreIcon */;
+			target = 38D930AB1726C5AB00BD0938 /* AppstoreIcons */;
 			targetProxy = 38D930D01726C5AC00BD0938 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -417,10 +421,10 @@
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcon-Info.plist";
+				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcons-Prefix.pch";
+				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcons-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				PRODUCT_NAME = AppstoreIcon;
+				PRODUCT_NAME = AppstoreIcons;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,10 +438,10 @@
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcon-Info.plist";
+				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcons-Prefix.pch";
+				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcons-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				PRODUCT_NAME = AppstoreIcon;
+				PRODUCT_NAME = AppstoreIcons;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -451,8 +455,8 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconTests-Info.plist";
-				PRODUCT_NAME = AppstoreIconTests;
+				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconsTests-Info.plist";
+				PRODUCT_NAME = AppstoreIconsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -466,8 +470,8 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconTests-Info.plist";
-				PRODUCT_NAME = AppstoreIconTests;
+				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconsTests-Info.plist";
+				PRODUCT_NAME = AppstoreIconsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -476,7 +480,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcon" */ = {
+		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930DB1726C5AC00BD0938 /* Debug */,
@@ -485,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcon" */ = {
+		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930DE1726C5AC00BD0938 /* Debug */,
@@ -494,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconTests" */ = {
+		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930E11726C5AC00BD0938 /* Debug */,
