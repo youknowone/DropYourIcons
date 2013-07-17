@@ -17,7 +17,7 @@
 		38D930CE1726C5AC00BD0938 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */; };
 		38D930CF1726C5AC00BD0938 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930AF1726C5AB00BD0938 /* Cocoa.framework */; };
 		38D930D71726C5AC00BD0938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D930D51726C5AC00BD0938 /* InfoPlist.strings */; };
-		38D930DA1726C5AC00BD0938 /* AppstoreIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */; };
+		38D930DA1726C5AC00BD0938 /* DropTheIconsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930D91726C5AC00BD0938 /* DropTheIconsTests.m */; };
 		38D930E51726C74300BD0938 /* AIIconWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930E41726C74300BD0938 /* AIIconWindowController.m */; };
 		E9026859F2E44D93AACBEB36 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF69A8FC97D49D88FD0F767 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -28,32 +28,32 @@
 			containerPortal = 38D930A41726C5AB00BD0938 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 38D930AB1726C5AB00BD0938;
-			remoteInfo = AppstoreIcon;
+			remoteInfo = DropTheIcons;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38017465176AB02A0049D26C /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
-		382E39A917279B6000099BC4 /* AppstoreIcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppstoreIcon.entitlements; sourceTree = "<group>"; };
-		38D930AC1726C5AB00BD0938 /* AppstoreIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppstoreIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		382E39A917279B6000099BC4 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		38D930AC1726C5AB00BD0938 /* DropTheIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropTheIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930AF1726C5AB00BD0938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D930B21726C5AB00BD0938 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38D930B31726C5AB00BD0938 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		38D930B41726C5AB00BD0938 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		38D930B71726C5AB00BD0938 /* AppstoreIcons-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIcons-Info.plist"; sourceTree = "<group>"; };
+		38D930B71726C5AB00BD0938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D930B91726C5AB00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		38D930BB1726C5AB00BD0938 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		38D930BD1726C5AB00BD0938 /* AppstoreIcons-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppstoreIcons-Prefix.pch"; sourceTree = "<group>"; };
+		38D930BD1726C5AB00BD0938 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		38D930BF1726C5AB00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		38D930C11726C5AB00BD0938 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
 		38D930C21726C5AB00BD0938 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
 		38D930C51726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		38D930CC1726C5AC00BD0938 /* AppstoreIconsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppstoreIconsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930CC1726C5AC00BD0938 /* DropTheIconsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropTheIconsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		38D930D41726C5AC00BD0938 /* AppstoreIconsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppstoreIconsTests-Info.plist"; sourceTree = "<group>"; };
+		38D930D41726C5AC00BD0938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D930D61726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		38D930D81726C5AC00BD0938 /* AppstoreIconTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppstoreIconTests.h; sourceTree = "<group>"; };
-		38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppstoreIconTests.m; sourceTree = "<group>"; };
+		38D930D81726C5AC00BD0938 /* DropTheIconsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropTheIconsTests.h; sourceTree = "<group>"; };
+		38D930D91726C5AC00BD0938 /* DropTheIconsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropTheIconsTests.m; sourceTree = "<group>"; };
 		38D930E31726C74300BD0938 /* AIIconWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIconWindowController.h; sourceTree = "<group>"; };
 		38D930E41726C74300BD0938 /* AIIconWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIIconWindowController.m; sourceTree = "<group>"; };
 		8F5EE625EDEB485683E3965F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -85,8 +85,8 @@
 		38D930A31726C5AB00BD0938 = {
 			isa = PBXGroup;
 			children = (
-				38D930B51726C5AB00BD0938 /* AppstoreIcon */,
-				38D930D21726C5AC00BD0938 /* AppstoreIconTests */,
+				38D930B51726C5AB00BD0938 /* DropTheIcons */,
+				38D930D21726C5AC00BD0938 /* DropTheIconsTests */,
 				38D930AE1726C5AB00BD0938 /* Frameworks */,
 				38D930AD1726C5AB00BD0938 /* Products */,
 				8F5EE625EDEB485683E3965F /* Pods.xcconfig */,
@@ -96,8 +96,8 @@
 		38D930AD1726C5AB00BD0938 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38D930AC1726C5AB00BD0938 /* AppstoreIcons.app */,
-				38D930CC1726C5AC00BD0938 /* AppstoreIconsTests.octest */,
+				38D930AC1726C5AB00BD0938 /* DropTheIcons.app */,
+				38D930CC1726C5AC00BD0938 /* DropTheIconsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,10 +123,10 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		38D930B51726C5AB00BD0938 /* AppstoreIcon */ = {
+		38D930B51726C5AB00BD0938 /* DropTheIcons */ = {
 			isa = PBXGroup;
 			children = (
-				382E39A917279B6000099BC4 /* AppstoreIcon.entitlements */,
+				382E39A917279B6000099BC4 /* Entitlements.entitlements */,
 				38D930C11726C5AB00BD0938 /* AIAppDelegate.h */,
 				38D930C21726C5AB00BD0938 /* AIAppDelegate.m */,
 				38D930C41726C5AC00BD0938 /* MainMenu.xib */,
@@ -134,36 +134,36 @@
 				38D930E41726C74300BD0938 /* AIIconWindowController.m */,
 				38D930B61726C5AB00BD0938 /* Supporting Files */,
 			);
-			path = AppstoreIcon;
+			path = DropTheIcons;
 			sourceTree = "<group>";
 		};
 		38D930B61726C5AB00BD0938 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				38017465176AB02A0049D26C /* Icon.iconset */,
-				38D930B71726C5AB00BD0938 /* AppstoreIcons-Info.plist */,
+				38D930B71726C5AB00BD0938 /* Info.plist */,
 				38D930B81726C5AB00BD0938 /* InfoPlist.strings */,
 				38D930BB1726C5AB00BD0938 /* main.m */,
-				38D930BD1726C5AB00BD0938 /* AppstoreIcons-Prefix.pch */,
+				38D930BD1726C5AB00BD0938 /* Prefix.pch */,
 				38D930BE1726C5AB00BD0938 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38D930D21726C5AC00BD0938 /* AppstoreIconTests */ = {
+		38D930D21726C5AC00BD0938 /* DropTheIconsTests */ = {
 			isa = PBXGroup;
 			children = (
-				38D930D81726C5AC00BD0938 /* AppstoreIconTests.h */,
-				38D930D91726C5AC00BD0938 /* AppstoreIconTests.m */,
+				38D930D81726C5AC00BD0938 /* DropTheIconsTests.h */,
+				38D930D91726C5AC00BD0938 /* DropTheIconsTests.m */,
 				38D930D31726C5AC00BD0938 /* Supporting Files */,
 			);
-			path = AppstoreIconTests;
+			path = DropTheIconsTests;
 			sourceTree = "<group>";
 		};
 		38D930D31726C5AC00BD0938 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38D930D41726C5AC00BD0938 /* AppstoreIconsTests-Info.plist */,
+				38D930D41726C5AC00BD0938 /* Info.plist */,
 				38D930D51726C5AC00BD0938 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38D930AB1726C5AB00BD0938 /* AppstoreIcons */ = {
+		38D930AB1726C5AB00BD0938 /* DropTheIcons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcons" */;
+			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIcons" */;
 			buildPhases = (
 				38D930A81726C5AB00BD0938 /* Sources */,
 				38D930A91726C5AB00BD0938 /* Frameworks */,
@@ -185,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = AppstoreIcons;
-			productName = AppstoreIcon;
-			productReference = 38D930AC1726C5AB00BD0938 /* AppstoreIcons.app */;
+			name = DropTheIcons;
+			productName = DropTheIcons;
+			productReference = 38D930AC1726C5AB00BD0938 /* DropTheIcons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38D930CB1726C5AC00BD0938 /* AppstoreIconsTests */ = {
+		38D930CB1726C5AC00BD0938 /* DropTheIconsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconsTests" */;
+			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIconsTests" */;
 			buildPhases = (
 				38D930C71726C5AC00BD0938 /* Sources */,
 				38D930C81726C5AC00BD0938 /* Frameworks */,
@@ -204,9 +204,9 @@
 			dependencies = (
 				38D930D11726C5AC00BD0938 /* PBXTargetDependency */,
 			);
-			name = AppstoreIconsTests;
-			productName = AppstoreIconTests;
-			productReference = 38D930CC1726C5AC00BD0938 /* AppstoreIconsTests.octest */;
+			name = DropTheIconsTests;
+			productName = DropTheIconsTests;
+			productReference = 38D930CC1726C5AC00BD0938 /* DropTheIconsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -218,8 +218,17 @@
 				CLASSPREFIX = AI;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jeong YunWon";
+				TargetAttributes = {
+					38D930AB1726C5AB00BD0938 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
-			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcons" */;
+			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "DropTheIcons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38D930AB1726C5AB00BD0938 /* AppstoreIcons */,
-				38D930CB1726C5AC00BD0938 /* AppstoreIconsTests */,
+				38D930AB1726C5AB00BD0938 /* DropTheIcons */,
+				38D930CB1726C5AC00BD0938 /* DropTheIconsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D930DA1726C5AC00BD0938 /* AppstoreIconTests.m in Sources */,
+				38D930DA1726C5AC00BD0938 /* DropTheIconsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		38D930D11726C5AC00BD0938 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38D930AB1726C5AB00BD0938 /* AppstoreIcons */;
+			target = 38D930AB1726C5AB00BD0938 /* DropTheIcons */;
 			targetProxy = 38D930D01726C5AC00BD0938 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -417,14 +426,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AppstoreIcon/AppstoreIcon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DropTheIcons/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcons-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcons-Info.plist";
+				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
+				INFOPLIST_FILE = DropTheIcons/Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				PRODUCT_NAME = AppstoreIcons;
+				PRODUCT_NAME = DropTheIcons;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,14 +443,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = AppstoreIcon/AppstoreIcon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DropTheIcons/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcons-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIcon/AppstoreIcons-Info.plist";
+				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
+				INFOPLIST_FILE = DropTheIcons/Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				PRODUCT_NAME = AppstoreIcons;
+				PRODUCT_NAME = DropTheIcons;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,13 +459,13 @@
 		38D930E11726C5AC00BD0938 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppstoreIcon.app/Contents/MacOS/AppstoreIcon";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropTheIcons.app/Contents/MacOS/DropTheIcons";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconsTests-Info.plist";
-				PRODUCT_NAME = AppstoreIconsTests;
+				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
+				INFOPLIST_FILE = DropTheIconsTests/Info.plist;
+				PRODUCT_NAME = DropTheIconsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -465,13 +474,13 @@
 		38D930E21726C5AC00BD0938 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppstoreIcon.app/Contents/MacOS/AppstoreIcon";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropTheIcons.app/Contents/MacOS/DropTheIcons";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppstoreIcon/AppstoreIcon-Prefix.pch";
-				INFOPLIST_FILE = "AppstoreIconTests/AppstoreIconsTests-Info.plist";
-				PRODUCT_NAME = AppstoreIconsTests;
+				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
+				INFOPLIST_FILE = DropTheIconsTests/Info.plist;
+				PRODUCT_NAME = DropTheIconsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -480,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "AppstoreIcons" */ = {
+		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "DropTheIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930DB1726C5AC00BD0938 /* Debug */,
@@ -489,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIcons" */ = {
+		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930DE1726C5AC00BD0938 /* Debug */,
@@ -498,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "AppstoreIconsTests" */ = {
+		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIconsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930E11726C5AC00BD0938 /* Debug */,

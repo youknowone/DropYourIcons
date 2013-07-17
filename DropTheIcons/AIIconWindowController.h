@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Jeong YunWon. All rights reserved.
 //
 
-@interface AIIconWindowController : NSWindowController<NSOpenSavePanelDelegate, NSAImageWellDelegate>
+@interface AIIconWindowController : NSWindowController<NSOpenSavePanelDelegate, NSAImageWellDelegate, NSWindowDelegate>
 
 @property IBOutlet NSView *hintView;
 @property IBOutlet NSAImageWell *inputImageWell;

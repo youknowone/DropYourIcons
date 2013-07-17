@@ -1,6 +1,6 @@
 //
 //  AppstoreIconTests.h
-//  Appstore IconTests
+//  Drop The IconsTests
 //
 //  Created by Jeong YunWon on 13. 4. 23..
 //  Copyright (c) 2013 Jeong YunWon. All rights reserved.

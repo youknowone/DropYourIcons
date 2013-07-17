@@ -62,7 +62,7 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     if (sizes == nil) {
         sizes = @[
             @[@512, @256, @128, @32, @16],
-            @[@72, @60, @57],
+            @[@512, @76, @72, @60, @57, @50, @29],
         ];
     }
 
@@ -119,6 +119,10 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     }
 
     [self generateIconToURL:savePanel.URL];
+}
+
+- (void)windowWillClose:(NSNotification *)notification {
+    [[NSApplication sharedApplication] terminate:nil];
 }
 
 #pragma mark NSOpenSavePanel delegate
