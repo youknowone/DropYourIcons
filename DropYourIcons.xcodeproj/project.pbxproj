@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38017466176AB02A0049D26C /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 38017465176AB02A0049D26C /* Icon.iconset */; };
+		38CB5BCD18B670F50027D6B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38CB5BCC18B670F50027D6B1 /* Images.xcassets */; };
 		38D930B01726C5AB00BD0938 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930AF1726C5AB00BD0938 /* Cocoa.framework */; };
 		38D930BA1726C5AB00BD0938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D930B81726C5AB00BD0938 /* InfoPlist.strings */; };
 		38D930BC1726C5AB00BD0938 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930BB1726C5AB00BD0938 /* main.m */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		38017465176AB02A0049D26C /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		382E39A917279B6000099BC4 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		38CB5BCC18B670F50027D6B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38D930AC1726C5AB00BD0938 /* Drop your Icons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drop your Icons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930AF1726C5AB00BD0938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D930B21726C5AB00BD0938 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -132,6 +134,7 @@
 				38D930C41726C5AC00BD0938 /* MainMenu.xib */,
 				38D930E31726C74300BD0938 /* AIIconWindowController.h */,
 				38D930E41726C74300BD0938 /* AIIconWindowController.m */,
+				38CB5BCC18B670F50027D6B1 /* Images.xcassets */,
 				38D930B61726C5AB00BD0938 /* Supporting Files */,
 			);
 			path = DropYourIcons;
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D930BA1726C5AB00BD0938 /* InfoPlist.strings in Resources */,
+				38CB5BCD18B670F50027D6B1 /* Images.xcassets in Resources */,
 				38D930C01726C5AB00BD0938 /* Credits.rtf in Resources */,
 				38D930C61726C5AC00BD0938 /* MainMenu.xib in Resources */,
 				38017466176AB02A0049D26C /* Icon.iconset in Resources */,
@@ -424,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DropYourIcons/Entitlements.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -440,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DropYourIcons/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
