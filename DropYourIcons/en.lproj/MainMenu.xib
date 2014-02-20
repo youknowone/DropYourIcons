@@ -78,16 +78,28 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="491">
                         <items>
-                            <menuItem title="Show source code..." id="832">
+                            <menuItem title="Quick manual..." id="832">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="showSource:" target="494" id="838"/>
+                                    <action selector="showManual:" target="494" id="ugT-0y-FgW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show source code..." id="tf2-et-Gaf">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showSource:" target="494" id="2df-uE-aJW"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Report a bug..." id="833">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="reportBug:" target="494" id="839"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Donate..." id="HoX-4D-Cyq">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="donate:" target="494" id="NFG-fh-qCw"/>
                                 </connections>
                             </menuItem>
                         </items>

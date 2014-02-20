@@ -10,9 +10,11 @@
 
 @interface AIAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property(assign) IBOutlet NSWindow *window;
 
+- (IBAction)showManual:(id)sender;
 - (IBAction)showSource:(id)sender;
 - (IBAction)reportBug:(id)sender;
+- (IBAction)donate:(id)sender;
 
 @end

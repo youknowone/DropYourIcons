@@ -10,19 +10,24 @@
 
 @implementation AIAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
 }
 
+- (void)showManual:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:@"https://github.com/youknowone/DropYourIcons#drop-your-icons".URL];
+}
 
 - (void)showSource:(id)sender {
-    [[NSWorkspace sharedWorkspace] openURL:@"https://github.com/youknowone/AppstoreIcon".URL];
+    [[NSWorkspace sharedWorkspace] openURL:@"https://github.com/youknowone/DropYourIcons".URL];
 }
 
 - (void)reportBug:(id)sender {
-    [[NSWorkspace sharedWorkspace] openURL:@"https://github.com/youknowone/AppstoreIcon/issues".URL];
+    [[NSWorkspace sharedWorkspace] openURL:@"https://github.com/youknowone/DropYourIcons/issues".URL];
 }
 
+- (void)donate:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:@"https://github.com/youknowone/DropYourIcons#do-you-like-this-project".URL];
+}
 
 @end

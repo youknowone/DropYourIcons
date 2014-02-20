@@ -23,14 +23,15 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     if (self) {
         // Initialization code here.
     }
-    
+
     return self;
 }
 
 - (void)windowDidLoad {
     [super windowDidLoad];
-    
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+
+    // Implement this method to handle any initialization after your window controller's window has been loaded from its
+    // nib file.
 }
 
 - (void)awakeFromNib {
@@ -59,22 +60,25 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     static NSArray *sizes = nil;
     if (sizes == nil) {
         sizes = @[
-            @[@512, @256, @128, @32, @16],
-            @[@512, @76, @72, @60, @57, @50, @40, @29],
+            @[ @512, @256, @128, @32, @16 ],
+            @[ @512, @76, @72, @60, @57, @50, @40, @29 ],
         ];
     }
 
     NSError *error = nil;
-    BOOL result = [[NSFileManager defaultManager] createDirectoryAtURL:dirURL withIntermediateDirectories:YES attributes:@{} error:&error];
+    BOOL result = [[NSFileManager defaultManager] createDirectoryAtURL:dirURL
+                                           withIntermediateDirectories:YES
+                                                            attributes:@{}
+                                                                 error:&error];
     if (error != nil) {
         NSLog(@"error! %@", error);
     }
     if (!result) {
-
     }
 
     NSInteger selectedSegment = self.sizeSegmentControl.selectedSegment;
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:selectedSegment] forKey:AILastSegmentIndex];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:selectedSegment]
+                                              forKey:AILastSegmentIndex];
     [[NSUserDefaults standardUserDefaults] synchronize];
 
     for (NSNumber *sizeNumber in [sizes objectAtIndex:selectedSegment]) {
@@ -102,14 +106,15 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
 - (void)generateToDownloadsFolder:(id)sender {
     NSString *filename = [[[self.inputImageWell.imageURL path] lastPathComponent] stringByDeletingPathExtension];
     NSString *iconname = (filename.length > 0) ? filename : @"icon";
-    NSURL *dirURL = NSPathForUserFileInDirectory(NSDownloadsDirectory, [iconname stringByAppendingString:@".iconset"]).fileURL;
+    NSURL *dirURL =
+        NSPathForUserFileInDirectory(NSDownloadsDirectory, [iconname stringByAppendingString:@".iconset"]).fileURL;
     [self generateIconToURL:dirURL];
 }
 
 - (void)generateToSelectedFolder:(id)sender {
     NSSavePanel *savePanel = [NSSavePanel savePanel];
     savePanel.directoryURL = [self.inputImageWell.imageURL URLByDeletingLastPathComponent];
-    savePanel.allowedFileTypes = @[@"iconset"];
+    savePanel.allowedFileTypes = @[ @"iconset" ];
     NSString *filename = [[[self.inputImageWell.imageURL path] lastPathComponent] stringByDeletingPathExtension];
     savePanel.nameFieldStringValue = filename;
 
@@ -147,8 +152,6 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
         return !NSSizeEqualToSize(image.size, NSSizeZero);
     }
 }
-
-
 
 #pragma mark NSAImageWell delegate
 
