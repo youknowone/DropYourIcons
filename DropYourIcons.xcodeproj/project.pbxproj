@@ -17,7 +17,7 @@
 		38D930CE1726C5AC00BD0938 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */; };
 		38D930CF1726C5AC00BD0938 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D930AF1726C5AB00BD0938 /* Cocoa.framework */; };
 		38D930D71726C5AC00BD0938 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D930D51726C5AC00BD0938 /* InfoPlist.strings */; };
-		38D930DA1726C5AC00BD0938 /* DropTheIconsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930D91726C5AC00BD0938 /* DropTheIconsTests.m */; };
+		38D930DA1726C5AC00BD0938 /* DropYourIconsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930D91726C5AC00BD0938 /* DropYourIconsTests.m */; };
 		38D930E51726C74300BD0938 /* AIIconWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D930E41726C74300BD0938 /* AIIconWindowController.m */; };
 		E9026859F2E44D93AACBEB36 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF69A8FC97D49D88FD0F767 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -28,14 +28,14 @@
 			containerPortal = 38D930A41726C5AB00BD0938 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 38D930AB1726C5AB00BD0938;
-			remoteInfo = DropTheIcons;
+			remoteInfo = DropYourIcons;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		38017465176AB02A0049D26C /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
 		382E39A917279B6000099BC4 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
-		38D930AC1726C5AB00BD0938 /* DropTheIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropTheIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930AC1726C5AB00BD0938 /* Drop your Icons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drop your Icons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930AF1726C5AB00BD0938 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		38D930B21726C5AB00BD0938 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		38D930B31726C5AB00BD0938 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -48,12 +48,12 @@
 		38D930C11726C5AB00BD0938 /* AIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIAppDelegate.h; sourceTree = "<group>"; };
 		38D930C21726C5AB00BD0938 /* AIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIAppDelegate.m; sourceTree = "<group>"; };
 		38D930C51726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		38D930CC1726C5AC00BD0938 /* DropTheIconsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropTheIconsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38D930CC1726C5AC00BD0938 /* DropYourIconsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropYourIconsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D930CD1726C5AC00BD0938 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		38D930D41726C5AC00BD0938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38D930D61726C5AC00BD0938 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		38D930D81726C5AC00BD0938 /* DropTheIconsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropTheIconsTests.h; sourceTree = "<group>"; };
-		38D930D91726C5AC00BD0938 /* DropTheIconsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropTheIconsTests.m; sourceTree = "<group>"; };
+		38D930D81726C5AC00BD0938 /* DropYourIconsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropYourIconsTests.h; sourceTree = "<group>"; };
+		38D930D91726C5AC00BD0938 /* DropYourIconsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropYourIconsTests.m; sourceTree = "<group>"; };
 		38D930E31726C74300BD0938 /* AIIconWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIconWindowController.h; sourceTree = "<group>"; };
 		38D930E41726C74300BD0938 /* AIIconWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIIconWindowController.m; sourceTree = "<group>"; };
 		8F5EE625EDEB485683E3965F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -85,8 +85,8 @@
 		38D930A31726C5AB00BD0938 = {
 			isa = PBXGroup;
 			children = (
-				38D930B51726C5AB00BD0938 /* DropTheIcons */,
-				38D930D21726C5AC00BD0938 /* DropTheIconsTests */,
+				38D930B51726C5AB00BD0938 /* DropYourIcons */,
+				38D930D21726C5AC00BD0938 /* DropYourIconsTests */,
 				38D930AE1726C5AB00BD0938 /* Frameworks */,
 				38D930AD1726C5AB00BD0938 /* Products */,
 				8F5EE625EDEB485683E3965F /* Pods.xcconfig */,
@@ -96,8 +96,8 @@
 		38D930AD1726C5AB00BD0938 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38D930AC1726C5AB00BD0938 /* DropTheIcons.app */,
-				38D930CC1726C5AC00BD0938 /* DropTheIconsTests.octest */,
+				38D930AC1726C5AB00BD0938 /* Drop your Icons.app */,
+				38D930CC1726C5AC00BD0938 /* DropYourIconsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		38D930B51726C5AB00BD0938 /* DropTheIcons */ = {
+		38D930B51726C5AB00BD0938 /* DropYourIcons */ = {
 			isa = PBXGroup;
 			children = (
 				382E39A917279B6000099BC4 /* Entitlements.entitlements */,
@@ -134,7 +134,7 @@
 				38D930E41726C74300BD0938 /* AIIconWindowController.m */,
 				38D930B61726C5AB00BD0938 /* Supporting Files */,
 			);
-			path = DropTheIcons;
+			path = DropYourIcons;
 			sourceTree = "<group>";
 		};
 		38D930B61726C5AB00BD0938 /* Supporting Files */ = {
@@ -150,14 +150,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38D930D21726C5AC00BD0938 /* DropTheIconsTests */ = {
+		38D930D21726C5AC00BD0938 /* DropYourIconsTests */ = {
 			isa = PBXGroup;
 			children = (
-				38D930D81726C5AC00BD0938 /* DropTheIconsTests.h */,
-				38D930D91726C5AC00BD0938 /* DropTheIconsTests.m */,
+				38D930D81726C5AC00BD0938 /* DropYourIconsTests.h */,
+				38D930D91726C5AC00BD0938 /* DropYourIconsTests.m */,
 				38D930D31726C5AC00BD0938 /* Supporting Files */,
 			);
-			path = DropTheIconsTests;
+			path = DropYourIconsTests;
 			sourceTree = "<group>";
 		};
 		38D930D31726C5AC00BD0938 /* Supporting Files */ = {
@@ -172,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38D930AB1726C5AB00BD0938 /* DropTheIcons */ = {
+		38D930AB1726C5AB00BD0938 /* DropYourIcons */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIcons" */;
+			buildConfigurationList = 38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropYourIcons" */;
 			buildPhases = (
 				38D930A81726C5AB00BD0938 /* Sources */,
 				38D930A91726C5AB00BD0938 /* Frameworks */,
@@ -185,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = DropTheIcons;
-			productName = DropTheIcons;
-			productReference = 38D930AC1726C5AB00BD0938 /* DropTheIcons.app */;
+			name = DropYourIcons;
+			productName = DropYourIcons;
+			productReference = 38D930AC1726C5AB00BD0938 /* Drop your Icons.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38D930CB1726C5AC00BD0938 /* DropTheIconsTests */ = {
+		38D930CB1726C5AC00BD0938 /* DropYourIconsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIconsTests" */;
+			buildConfigurationList = 38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropYourIconsTests" */;
 			buildPhases = (
 				38D930C71726C5AC00BD0938 /* Sources */,
 				38D930C81726C5AC00BD0938 /* Frameworks */,
@@ -204,9 +204,9 @@
 			dependencies = (
 				38D930D11726C5AC00BD0938 /* PBXTargetDependency */,
 			);
-			name = DropTheIconsTests;
-			productName = DropTheIconsTests;
-			productReference = 38D930CC1726C5AC00BD0938 /* DropTheIconsTests.octest */;
+			name = DropYourIconsTests;
+			productName = DropYourIconsTests;
+			productReference = 38D930CC1726C5AC00BD0938 /* DropYourIconsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AI;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jeong YunWon";
 				TargetAttributes = {
 					38D930AB1726C5AB00BD0938 = {
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "DropTheIcons" */;
+			buildConfigurationList = 38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "DropYourIcons" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -240,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38D930AB1726C5AB00BD0938 /* DropTheIcons */,
-				38D930CB1726C5AC00BD0938 /* DropTheIconsTests */,
+				38D930AB1726C5AB00BD0938 /* DropYourIcons */,
+				38D930CB1726C5AC00BD0938 /* DropYourIconsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D930DA1726C5AC00BD0938 /* DropTheIconsTests.m in Sources */,
+				38D930DA1726C5AC00BD0938 /* DropYourIconsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		38D930D11726C5AC00BD0938 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38D930AB1726C5AB00BD0938 /* DropTheIcons */;
+			target = 38D930AB1726C5AB00BD0938 /* DropYourIcons */;
 			targetProxy = 38D930D01726C5AC00BD0938 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -367,7 +367,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -400,7 +399,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -426,15 +424,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DropTheIcons/Entitlements.entitlements;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_ENTITLEMENTS = DropYourIcons/Entitlements.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
-				INFOPLIST_FILE = DropTheIcons/Info.plist;
+				GCC_PREFIX_HEADER = DropYourIcons/Prefix.pch;
+				INFOPLIST_FILE = DropYourIcons/Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				PRODUCT_NAME = DropTheIcons;
-				PROVISIONING_PROFILE = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Drop your Icons";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -443,15 +440,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F5EE625EDEB485683E3965F /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DropTheIcons/Entitlements.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DropYourIcons/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
-				INFOPLIST_FILE = DropTheIcons/Info.plist;
+				GCC_PREFIX_HEADER = DropYourIcons/Prefix.pch;
+				INFOPLIST_FILE = DropYourIcons/Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				PRODUCT_NAME = DropTheIcons;
-				PROVISIONING_PROFILE = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "Drop your Icons";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -459,13 +456,13 @@
 		38D930E11726C5AC00BD0938 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropTheIcons.app/Contents/MacOS/DropTheIcons";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropYourIcons.app/Contents/MacOS/DropYourIcons";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
-				INFOPLIST_FILE = DropTheIconsTests/Info.plist;
-				PRODUCT_NAME = DropTheIconsTests;
+				GCC_PREFIX_HEADER = DropYourIcons/Prefix.pch;
+				INFOPLIST_FILE = DropYourIconsTests/Info.plist;
+				PRODUCT_NAME = DropYourIconsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -474,13 +471,13 @@
 		38D930E21726C5AC00BD0938 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropTheIcons.app/Contents/MacOS/DropTheIcons";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropYourIcons.app/Contents/MacOS/DropYourIcons";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DropTheIcons/Prefix.pch;
-				INFOPLIST_FILE = DropTheIconsTests/Info.plist;
-				PRODUCT_NAME = DropTheIconsTests;
+				GCC_PREFIX_HEADER = DropYourIcons/Prefix.pch;
+				INFOPLIST_FILE = DropYourIconsTests/Info.plist;
+				PRODUCT_NAME = DropYourIconsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -489,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "DropTheIcons" */ = {
+		38D930A71726C5AB00BD0938 /* Build configuration list for PBXProject "DropYourIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930DB1726C5AC00BD0938 /* Debug */,
@@ -498,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIcons" */ = {
+		38D930DD1726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropYourIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930DE1726C5AC00BD0938 /* Debug */,
@@ -507,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropTheIconsTests" */ = {
+		38D930E01726C5AC00BD0938 /* Build configuration list for PBXNativeTarget "DropYourIconsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38D930E11726C5AC00BD0938 /* Debug */,

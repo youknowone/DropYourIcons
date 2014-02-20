@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="Drop The Icons" id="56">
+                    <menu key="submenu" title="Drop The Icons" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Drop The Icons" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" hidden="YES" keyEquivalent="," id="129"/>
+                            <menuItem isSeparatorItem="YES" hidden="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Drop The Icons" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit Drop The Icons" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="19">
+                    <menu key="submenu" title="Window" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Bring All to Front" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Help" systemMenu="help" id="491">
+                        <items>
+                            <menuItem title="Show source code..." id="832">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showSource:" target="494" id="838"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Report a bug..." id="833">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="reportBug:" target="494" id="839"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Drop Your Icons" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="307" height="400"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <value key="minSize" type="size" width="307" height="400"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="307" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="799">
+                        <rect key="frame" x="20" y="356" width="271" height="24"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="621">
+                                <rect key="frame" x="0.0" y="0.0" width="269" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <segmentedCell key="cell" alignment="left" style="rounded" trackingMode="selectOne" id="622">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <segments>
+                                        <segment label="OS X" width="131" selected="YES"/>
+                                        <segment label="iOS" width="131" tag="1"/>
+                                    </segments>
+                                </segmentedCell>
+                            </segmentedControl>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="621" firstAttribute="centerY" secondItem="799" secondAttribute="centerY" id="822"/>
+                            <constraint firstAttribute="height" constant="24" id="826"/>
+                            <constraint firstItem="621" firstAttribute="leading" secondItem="799" secondAttribute="leading" constant="2" id="827"/>
+                        </constraints>
+                    </customView>
+                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="536" customClass="NSAImageWell">
+                        <rect key="frame" x="17" y="81" width="273" height="273"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="537"/>
+                        <connections>
+                            <outlet property="delegate" destination="559" id="718"/>
+                        </connections>
+                    </imageView>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="575">
+                        <rect key="frame" x="25" y="89" width="257" height="257"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="566">
+                                <rect key="frame" x="0.0" y="108" width="257" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Drag your original icon  and drop here" drawsBackground="YES" id="567">
+                                    <font key="font" size="17" name="LucidaGrande"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" white="0.74731979930000003" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="639">
+                                <rect key="frame" x="14" y="13" width="229" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Or select an icon..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="640">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="selectInput:" target="559" id="715"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="639" secondAttribute="trailing" constant="20" symbolic="YES" id="658"/>
+                            <constraint firstAttribute="bottom" secondItem="639" secondAttribute="bottom" constant="20" symbolic="YES" id="660"/>
+                            <constraint firstItem="566" firstAttribute="centerY" secondItem="575" secondAttribute="centerY" id="666"/>
+                            <constraint firstItem="639" firstAttribute="leading" secondItem="575" secondAttribute="leading" constant="20" symbolic="YES" id="774"/>
+                            <constraint firstItem="566" firstAttribute="leading" secondItem="575" secondAttribute="leading" id="776"/>
+                            <constraint firstItem="566" firstAttribute="trailing" secondItem="575" secondAttribute="trailing" id="778"/>
+                        </constraints>
+                    </customView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="668">
+                        <rect key="frame" x="20" y="47" width="267" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="788"/>
+                        </constraints>
+                        <buttonCell key="cell" type="smallSquare" title="Generate to Downloads folder" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="669">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="generateToDownloadsFolder:" target="559" id="830"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="691">
+                        <rect key="frame" x="20" y="19" width="267" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="smallSquare" title="Generate to selected folder..." bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="693">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="generateToSelectedFolder:" target="559" id="829"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="668" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="672"/>
+                    <constraint firstItem="691" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="698"/>
+                    <constraint firstItem="575" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="25" id="722"/>
+                    <constraint firstItem="536" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="727"/>
+                    <constraint firstItem="575" firstAttribute="centerY" secondItem="536" secondAttribute="centerY" id="751"/>
+                    <constraint firstItem="575" firstAttribute="top" secondItem="372" secondAttribute="top" constant="54" id="752"/>
+                    <constraint firstAttribute="trailing" secondItem="668" secondAttribute="trailing" constant="20" symbolic="YES" id="766"/>
+                    <constraint firstAttribute="trailing" secondItem="691" secondAttribute="trailing" constant="20" symbolic="YES" id="769"/>
+                    <constraint firstAttribute="bottom" secondItem="691" secondAttribute="bottom" constant="20" symbolic="YES" id="770"/>
+                    <constraint firstItem="575" firstAttribute="centerX" secondItem="536" secondAttribute="centerX" id="771"/>
+                    <constraint firstAttribute="trailing" secondItem="536" secondAttribute="trailing" constant="20" symbolic="YES" id="772"/>
+                    <constraint firstItem="691" firstAttribute="top" secondItem="668" secondAttribute="bottom" id="795"/>
+                    <constraint firstItem="691" firstAttribute="top" secondItem="668" secondAttribute="bottom" id="796"/>
+                    <constraint firstAttribute="bottom" secondItem="575" secondAttribute="bottom" constant="89" id="797"/>
+                    <constraint firstAttribute="bottom" secondItem="536" secondAttribute="bottom" constant="84" id="798"/>
+                    <constraint firstItem="668" firstAttribute="top" secondItem="536" secondAttribute="bottom" constant="8" symbolic="YES" id="805"/>
+                    <constraint firstItem="799" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" symbolic="YES" id="808"/>
+                    <constraint firstItem="799" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" symbolic="YES" id="810"/>
+                    <constraint firstAttribute="trailing" secondItem="799" secondAttribute="trailing" constant="16" id="820"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="559" id="561"/>
+            </connections>
+        </window>
+        <customObject id="494" customClass="AIAppDelegate">
+            <connections>
+                <outlet property="window" destination="371" id="532"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="559" customClass="AIIconWindowController">
+            <connections>
+                <outlet property="generateToDownloads" destination="668" id="717"/>
+                <outlet property="generateToSelected" destination="691" id="716"/>
+                <outlet property="hintView" destination="575" id="598"/>
+                <outlet property="inputImageWell" destination="536" id="714"/>
+                <outlet property="sizeSegmentControl" destination="621" id="831"/>
+                <outlet property="window" destination="371" id="560"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>

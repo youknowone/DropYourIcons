@@ -18,8 +18,7 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
 
 @implementation AIIconWindowController
 
-- (id)initWithWindow:(NSWindow *)window
-{
+- (id)initWithWindow:(NSWindow *)window {
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
@@ -28,8 +27,7 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     return self;
 }
 
-- (void)windowDidLoad
-{
+- (void)windowDidLoad {
     [super windowDidLoad];
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
@@ -62,7 +60,7 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     if (sizes == nil) {
         sizes = @[
             @[@512, @256, @128, @32, @16],
-            @[@512, @76, @72, @60, @57, @50, @29],
+            @[@512, @76, @72, @60, @57, @50, @40, @29],
         ];
     }
 
@@ -112,6 +110,8 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
     NSSavePanel *savePanel = [NSSavePanel savePanel];
     savePanel.directoryURL = [self.inputImageWell.imageURL URLByDeletingLastPathComponent];
     savePanel.allowedFileTypes = @[@"iconset"];
+    NSString *filename = [[[self.inputImageWell.imageURL path] lastPathComponent] stringByDeletingPathExtension];
+    savePanel.nameFieldStringValue = filename;
 
     NSInteger status = [savePanel runModal];
     if (status == NSFileHandlingPanelCancelButton) {
@@ -128,10 +128,14 @@ NSString *AILastSegmentIndex = @"AILastSegmentIndex";
 #pragma mark NSOpenSavePanel delegate
 
 - (BOOL)panel:(id)sender shouldEnableURL:(NSURL *)url {
-    if ([sender isKindOfClass:[NSSavePanel class]]) {
-        return [url.path.pathExtension isEqualToString:@"iconset"] && url.hasDirectoryPath;
+    if ([sender isMemberOfClass:[NSSavePanel class]]) {
+        BOOL hasExtension = [url.path.pathExtension isEqualToString:@"iconset"];
+        BOOL hasDirectoryPath = url.hasDirectoryPath;
+        return hasExtension && hasDirectoryPath;
     } else {
-        return [[NSImage imageFileTypes] containsObject:[url pathExtension]];
+        NSArray *candidates = [NSImage imageFileTypes];
+        BOOL hasCandidate = [candidates containsObject:[url pathExtension]];
+        return hasCandidate;
     }
 }
 
